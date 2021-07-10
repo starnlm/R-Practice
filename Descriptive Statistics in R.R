@@ -1,5 +1,5 @@
 # choose(n, k) = nCk
-choose(5, 2)
+choose(8, 2)
 
 # rbinom, rgamma, rnorm etc for random number generation of a specific dist.
 rbinom(1, 1, 0.5)
@@ -46,3 +46,12 @@ lines(x,y3,lwd=2,col="green", pch=5 ,type="o")
 lines(x,y4,lwd=2,col="red", pch=2, type="o")
 # type="o" for points connected with a line
 # pch=0, 1, 2, 5 for squares, circles, triangles and diamonds
+
+
+# normal distribution
+x<-rnorm(500, 3, 4)
+mean(x)
+var(x)
+
+
+runif(100)
