@@ -54,4 +54,6 @@ mean(x)
 var(x)
 
 
-runif(100)
+x = seq(-12, 12, by = 0.1)
+length(x)
+x
