@@ -56,4 +56,19 @@ var(x)
 
 x = seq(-12, 12, by = 0.1)
 length(x)
+
+
+y<- rnorm(10)
+y
+x=t.test(y)
 x
+
+f=function(t){x=t.test(rnorm(t));as.vector(x$conf.int)};
+f(10)
+t <- as.matrix(rep(10,100))
+C <- t(apply(t,1,f))
+C
+matplot(C,type="l");#a matrix plot
+abline(0,0)#includes a line at 0
+num = (C[, 1] < 0) & (C[, 2] > 0)
+sum(num)/nrow(C)
